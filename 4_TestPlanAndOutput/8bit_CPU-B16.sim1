@@ -1,0 +1,77 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="564,604" rotation="-90" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/mahendra1/mahendra1/Debug/mahendra1.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Hd44780" CircId="Hd44780-3" mainComp="false" Show_id="true" Show_Val="false" Pos="708,480" rotation="0" hflip="1" vflip="1" label="Hd44780-3" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2 _Lines" Cols="16 _Chars." />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="516,488" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-6" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Switch" CircId="Switch-10" mainComp="false" Show_id="false" Show_Val="false" Pos="480,704" rotation="0" hflip="1" vflip="1" label="Switch-10" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Switch" CircId="Switch-11" mainComp="false" Show_id="false" Show_Val="false" Pos="588,704" rotation="0" hflip="1" vflip="1" label="Switch-11" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Led" CircId="Led-14" mainComp="false" Show_id="false" Show_Val="false" Pos="664,696" rotation="90" hflip="1" vflip="1" label="Led-14" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="544,788" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Probe" CircId="Probe-31" mainComp="false" Show_id="false" Show_Val="true" Pos="512,652" rotation="-45" hflip="1" vflip="1" label="Probe-31" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-32" mainComp="false" Show_id="false" Show_Val="true" Pos="588,660" rotation="-45" hflip="1" vflip="1" label="Probe-32" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-50" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="596,468" rotation="0" hflip="1" vflip="1" label="Potentiometer-50" idLabPos="-16,-40" labelrot="0" valLabPos="23.8327,-20" valLabRot="0" Resistance="1000 Ω" Value_Ohm="0 Ω" />
+
+<item itemtype="Ground" CircId="Ground-52" mainComp="false" Show_id="false" Show_Val="false" Pos="640,412" rotation="0" hflip="1" vflip="1" label="Ground-52" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Probe" CircId="Probe-58" mainComp="false" Show_id="false" Show_Val="true" Pos="612,504" rotation="-45" hflip="1" vflip="1" label="Probe-58" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="544,756" />
+
+<item itemtype="Node" CircId="Node-34" mainComp="false" Pos="624,756" />
+
+<item itemtype="Node" CircId="Node-64" mainComp="false" Pos="636,396" />
+
+<item itemtype="Node" CircId="Node-67" mainComp="false" Pos="700,500" />
+
+<item itemtype="Connector" uid="connector-19" startpinid="Switch-10-switch0pinN" endpinid="mega328-1-PORTD0" pointList="496,704,496,628,580,628,580,612" />
+
+<item itemtype="Connector" uid="connector-20" startpinid="Switch-11-pinP0" endpinid="mega328-1-PORTD1" pointList="572,704,572,652,588,652,588,612" />
+
+<item itemtype="Connector" uid="connector-21" startpinid="mega328-1-PORTD2" endpinid="Led-14-lPin" pointList="596,612,596,656,664,656,664,680" />
+
+<item itemtype="Connector" uid="connector-22" startpinid="Switch-10-pinP0" endpinid="Node-18-0" pointList="464,704,464,756,544,756" />
+
+<item itemtype="Connector" uid="connector-23" startpinid="Node-18-2" endpinid="Node-34-0" pointList="544,756,624,756" />
+
+<item itemtype="Connector" uid="connector-24" startpinid="Node-18-1" endpinid="Ground-17-Gnd" pointList="544,756,544,772" />
+
+<item itemtype="Connector" uid="connector-25" startpinid="mega328-1-PORTB6" endpinid="Hd44780-3-dataPin6" pointList="636,612,636,640,796,640,796,488" />
+
+<item itemtype="Connector" uid="connector-26" startpinid="mega328-1-PORTB7" endpinid="Hd44780-3-dataPin7" pointList="644,612,644,628,804,628,804,488" />
+
+<item itemtype="Connector" uid="connector-27" startpinid="mega328-1-PORTB2" endpinid="Hd44780-3-PinRS" pointList="668,564,668,488,724,488" />
+
+<item itemtype="Connector" uid="connector-28" startpinid="mega328-1-PORTB3" endpinid="Hd44780-3-PinEn" pointList="660,564,660,512,740,512,740,488" />
+
+<item itemtype="Connector" uid="connector-29" startpinid="mega328-1-PORTB4" endpinid="Hd44780-3-dataPin4" pointList="652,564,652,528,780,528,780,488" />
+
+<item itemtype="Connector" uid="connector-30" startpinid="mega328-1-PORTB5" endpinid="Hd44780-3-dataPin5" pointList="644,564,644,536,788,536,788,488" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Switch-11-switch0pinN" endpinid="Node-34-1" pointList="604,704,624,704,624,756" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="Node-34-2" endpinid="Led-14-rPin" pointList="624,756,664,756,664,712" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="Fixed Voltage-6-outnod" endpinid="Potentiometer-50-PinA" pointList="532,488,560,488,560,468,580,468" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="Potentiometer-50-PinM" endpinid="mega328-1-PORTC0" pointList="596,484,596,532,612,532,612,564" />
+
+<item itemtype="Connector" uid="Connector-53" startpinid="Potentiometer-50-PinB" endpinid="Node-64-0" pointList="612,468,612,396,636,396" />
+
+<item itemtype="Connector" uid="Connector-63" startpinid="Hd44780-3-PinRW" endpinid="Node-67-0" pointList="732,488,732,500,700,500" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="Node-64-2" endpinid="Ground-52-Gnd" pointList="636,396,640,396" />
+
+<item itemtype="Connector" uid="Connector-66" startpinid="mega328-1-PORTB1" endpinid="Node-67-1" pointList="676,564,676,504,700,504,700,500" />
+
+<item itemtype="Connector" uid="Connector-68" startpinid="Node-67-2" endpinid="Node-64-1" pointList="700,500,680,500,680,396,636,396" />
+
+</circuit>
